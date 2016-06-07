@@ -183,12 +183,12 @@ module MotionPrint
     end
 
     # Borrowed from BubbleWrap's Device.simulator?
-    def simulator?
-      if UIDevice.currentDevice.systemVersion.to_i >= 9
-        !NSBundle.mainBundle.bundlePath.start_with?('/var/')
-      else
-        !(UIDevice.currentDevice.model =~ /simulator/i).nil?
-      end
-    end
+    # def simulator?
+#       if UIDevice.currentDevice.systemVersion.to_i >= 9
+#         !NSBundle.mainBundle.bundlePath.start_with?('/var/')
+#       else
+#         !(UIDevice.currentDevice.model =~ /simulator/i).nil?
+#       end
+#     end
   end
 end
